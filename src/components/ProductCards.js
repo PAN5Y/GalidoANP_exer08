@@ -9,13 +9,13 @@ function ProductCards(props){
             {
                 products.map((product) => {
                     return (
-                        <div className='product-card'>
+                        <div className='product-card' key={product.id}>
                             <li key={product.id}>
-                                <center><img src={product.img} alt={product.name} class="product-image" /></center>
+                                <center><img src={product.img} alt={product.name} className="product-image" /></center>
                                 <p className='product-name'><b><i>{product.name}</i></b></p>
                                 <p className='product-price'>${product.price}</p>
                                 <br/>
-                                <button className="add-to-cart"><b> ADD TO CART </b></button>
+                                <button onClick={()=> console.log("Added", product.name, "to the cart!")} className="add-to-cart"><b> ADD TO CART </b></button>
                             </li>
                         </div> 
                     )
