@@ -1,6 +1,17 @@
+/*
+    Name: Galido, Alyanna Nicole P.
+    Section: CMSC 100 - UV1L
+    Description: This program contains Header component.
+*/
+
 import React from 'react';
 import './App.css';
 import Menu from './Menu';
+
+/*
+    The Header component of the application. 
+    It renders the logo and navigation bar.
+*/
 
 function Header() {
     return(
@@ -15,6 +26,9 @@ function Header() {
     )
 }
 
+/*
+    Array containing the menu list in the navigation bar.
+*/
 const menuList = [
     { name: "Appliances", url: "#", id: 1 },
     { name: "Groceries", url: "#", id: 2 },

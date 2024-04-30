@@ -1,7 +1,18 @@
+/*
+    Name: Galido, Alyanna Nicole P.
+    Section: CMSC 100 - UV1L
+    Description: This program contains Body component.
+*/
+
 import React from 'react';
 import './App.css';
 import './ProductCards.js'
 import ProductCards from './ProductCards.js';
+
+/*
+    The Body component of the application. 
+    It renders the product cards.
+*/
 
 function Body() {
     return(
@@ -10,6 +21,10 @@ function Body() {
         </div>
     )
 }
+
+/*
+    Array containing the products in each product card.
+*/
 
 const productList = [
     {

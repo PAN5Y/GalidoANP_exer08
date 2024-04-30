@@ -1,5 +1,16 @@
+/*
+    Name: Galido, Alyanna Nicole P.
+    Section: CMSC 100 - UV1L
+    Description: This program contains Product Cards component.
+*/
+
 import React from 'react';
 import './App.css';
+
+/*
+    The Product Cards component of the application. 
+    It renders each product in the productList array from the Body.js file as a product card.
+*/
 
 function ProductCards(props){
     let products = props.card;
